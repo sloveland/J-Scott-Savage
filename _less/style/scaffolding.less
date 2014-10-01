@@ -1,24 +1,49 @@
-.site-content, .secondary-content {
+.content-area, .widget-area {
   .edge-padding;
+  .vertical-padding(1em);
 }
 
-.site-content, .secondary-content {
-	.vertical-padding(1em);
+.main-content {
+	@media (min-width: @screen-md) {
+    padding-right: 40px;
+  }
 }
 
 .container {
-	max-width: @screen-md;
+	max-width: @screen-lg;
 	margin: 0 auto;
 	padding: 0 1em;
 	position: relative;
 }
+
+.main-content {
+	margin-bottom: 40px;
+	position: relative;
+	overflow: hidden;
+	padding-top: 0;
+  @media (min-width: @screen-md) {
+    width: 70%;
+    float: left;
+  }
+}
+.secondary-content {
+	@media (min-width: @screen-md) {
+    width: 30%;
+    float: right;
+  }
+}
+
+.content-area, .widget-area {
+}
+
+
 
 .site-footer {
 	min-height: 480px;
 	position: relative;
 	.copyright {
 		position: absolute;
-		top: 1em;
+		bottom: 1em;
 	}
 	@media (min-width: @screen-xs) {
 		min-height: 960px;

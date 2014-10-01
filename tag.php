@@ -13,6 +13,8 @@
 
 get_header(); ?>
 
+<div id="main-content" class="main-content scroll-body">
+
 	<section id="primary" class="content-area scroll-body">
 		<div id="content" class="site-content" role="main">
 
@@ -53,6 +55,7 @@ get_header(); ?>
 			?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
+</div><!-- #main-content -->
 
 <?php
 get_sidebar( 'content' );

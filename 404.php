@@ -9,8 +9,9 @@
 
 get_header(); ?>
 
+<div id="main-content" class="main-content scroll-body">
 
-	<div id="primary" class="content-area scroll-body">
+	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
 			<header class="page-header">
@@ -25,6 +26,7 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
+</div><!-- #main-content -->
 
 <?php
 get_sidebar( 'content' );

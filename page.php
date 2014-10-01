@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<div id="main-content" class="main-content">
+<div id="main-content" class="main-content scroll-body">
 
 <?php
 	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
@@ -21,7 +21,7 @@ get_header(); ?>
 		get_template_part( 'featured-content' );
 	}
 ?>
-	<div id="primary" class="content-area scroll-body">
+	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
 			<?php

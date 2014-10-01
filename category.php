@@ -11,7 +11,9 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area scroll-body">
+<div id="main-content" class="main-content scroll-body">
+
+	<section id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -51,6 +53,7 @@ get_header(); ?>
 			?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
+</div><!-- #main-content -->
 
 <?php
 get_sidebar( 'content' );

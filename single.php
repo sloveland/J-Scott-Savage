@@ -9,7 +9,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area scroll-body">
+<div id="main-content" class="main-content scroll-body">
+
+	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 			<?php
 				// Start the Loop.
@@ -34,6 +36,8 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
+
+</div><!-- #main-content -->
 <?php
 get_sidebar( 'content' );
 get_sidebar();

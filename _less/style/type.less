@@ -11,10 +11,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 21px;
-    @media (min-width: @screen-xs) {
-        font-size: 28px;
-    }
+  font-size: 21px;
+  @media (min-width: @screen-xs) {
+      font-size: 28px;
+  }
+  @media (min-width: @screen-sm) {
+    font-size: 30px;
+  }
 }
 
 h2 {
@@ -99,7 +102,11 @@ nav ol {
     list-style-image: none;
 }
 
-.entry-title, .entry-title a {
+.entry-title {
+  // margin-top: 40px;
+  a {
+    
+  }
   // font-size: 21px;
   // margin-top: 0;
 }

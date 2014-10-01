@@ -52,4 +52,4 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="main" class="site-main" role="main">
+	<div id="main" class="site-main clearfix">
