@@ -1,0 +1,26 @@
+.site-content, .secondary-content {
+  .edge-padding;
+}
+
+.site-content, .secondary-content {
+	.vertical-padding(1em);
+}
+
+.container {
+	max-width: @screen-md;
+	margin: 0 auto;
+	padding: 0 1em;
+	position: relative;
+}
+
+.site-footer {
+	min-height: 480px;
+	position: relative;
+	.copyright {
+		position: absolute;
+		top: 1em;
+	}
+	@media (min-width: @screen-xs) {
+		min-height: 960px;
+	}
+}
