@@ -13,53 +13,77 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 21px;
   @media (min-width: @screen-xs) {
-      font-size: 28px;
+      font-size: 24px;
   }
   @media (min-width: @screen-sm) {
-    font-size: 30px;
+    font-size: 28px;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: 32px;
   }
 }
 
 h2 {
-    font-size: 20px;
-    @media (min-width: @screen-xs) {
-        font-size: 24px;
-    }
+  font-size: 20px;
+  @media (min-width: @screen-xs) {
+    font-size: 22px;
+  }
+  @media (min-width: @screen-sm) {
+    font-size: 25px;
+  }
+  @media (min-width: @screen-sm) {
+    font-size: 28px;
+  }
 }
 
 h3 {
-    font-size: 19px;
-    @media (min-width: @screen-xs) {
-        font-size: 21px;
-    }
+  font-size: 19px;
+  @media (min-width: @screen-xs) {
+    font-size: 20px;
+  }
+  @media (min-width: @screen-sm) {
+    font-size: 22px;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: 24px;
+  }
 }
 
 h4 {
-    font-size: 18px;
-    @media (min-width: @screen-xs) {
-        font-size: 20px;
-    }
+  font-size: 18px;
+  @media (min-width: @screen-xs) {
+    font-size: 19px;
+  }
+  @media (min-width: @screen-sm) {
+    font-size: 20px;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: 21px;
+  }
 }
 
 h5 {
-    font-size: 17px;
-    @media (min-width: @screen-xs) {
-        font-size: 18px;
-    }
+  font-size: 17px;
+  @media (min-width: @screen-xs) {
+    font-size: 18px;
+  }
 }
 
 h6 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 p,
 pre {
-    margin: 1em 0;
-    letter-spacing: @letter-spacing-size;
+  margin: 1em 0;
+  letter-spacing: @letter-spacing-size;
 }
 
 a {
-    color: @link-color;
+  color: @link-color;
+  &:hover, &:target {
+    color: @text-color;
+  }  
 }
 
 code,
@@ -101,11 +125,16 @@ nav ol {
     list-style: none;
     list-style-image: none;
 }
-
+.svg-icon svg {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  bottom: -4px;
+}
 .entry-title {
   // margin-top: 40px;
   a {
-    
+    .normalize-link;
   }
   // font-size: 21px;
   // margin-top: 0;

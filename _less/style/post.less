@@ -1,0 +1,81 @@
+article.post, article.page {
+	border-top: 1px solid @text-color;
+	margin-top: 40px;
+	padding-top: 40px;
+	position: relative;
+	&:first-child {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.entry-header {
+	position: relative;
+}
+.entry-meta {
+	padding: 5px 0;
+	a {
+		.normalize-link;
+		text-transform: uppercase;
+	}
+	.tag-links {
+		&::before {
+			content: "TAGGED: ";
+		}
+		a {
+			text-transform: lowercase;
+			// text-decoration: underline;
+			&::after {
+				content: ", ";
+			}
+			&:last-child::after {
+				content: "";
+			}
+		}
+	}
+}
+.entry-date, .comments-link {
+	display: block;
+}
+.entry-date {
+	float: left;
+}
+.byline {
+	display: none;
+}
+.comments-link {
+	float: right;
+}
+.post-navigation {
+	padding-bottom: 40px;
+	a {
+		.normalize-link;
+	}
+}
+.post-edit-link {
+	.normalize-link;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	// display: block;
+	// width: 100%;
+	// float: left;
+	font-size: 12px;
+}
+.nav-links {
+	a {
+		display: block;
+		padding: 5px 0;
+		border-top: 1px solid @text-color;
+		&:last-child {
+			border-bottom: 1px solid @text-color;
+		}
+	}
+}
+.meta-nav {
+	text-transform: uppercase;
+	&::after {
+		content: " - ";
+	}
+}

@@ -1,4 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,400italic,700italic|Almendra);
+/*
+Theme Name: J Scott Savage
+Theme URI: http://wordpress.org/themes/twentyfourteen
+Author: Sam Loveland
+Author URI: http://samuelloveland.com
+Description: Designed for J Scott Savage's Author Site and Blog, a child theme of TwentyFourteen
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 .edge-padding {
   padding: 0 20px;
 }
@@ -601,12 +614,17 @@ h1 {
 }
 @media (min-width: 480px) {
   h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 @media (min-width: 600px) {
   h1 {
-    font-size: 30px;
+    font-size: 28px;
+  }
+}
+@media (min-width: 960px) {
+  h1 {
+    font-size: 32px;
   }
 }
 h2 {
@@ -614,7 +632,17 @@ h2 {
 }
 @media (min-width: 480px) {
   h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 28px;
   }
 }
 h3 {
@@ -622,7 +650,17 @@ h3 {
 }
 @media (min-width: 480px) {
   h3 {
-    font-size: 21px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 600px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 960px) {
+  h3 {
+    font-size: 24px;
   }
 }
 h4 {
@@ -630,7 +668,17 @@ h4 {
 }
 @media (min-width: 480px) {
   h4 {
+    font-size: 19px;
+  }
+}
+@media (min-width: 600px) {
+  h4 {
     font-size: 20px;
+  }
+}
+@media (min-width: 960px) {
+  h4 {
+    font-size: 21px;
   }
 }
 h5 {
@@ -651,6 +699,10 @@ pre {
 }
 a {
   color: #007ba3;
+}
+a:hover,
+a:target {
+  color: #352300;
 }
 code,
 kbd,
@@ -684,6 +736,21 @@ nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
+}
+.svg-icon svg {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  bottom: -4px;
+}
+.entry-title a {
+  color: #352300;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+}
+.entry-title a:hover,
+.entry-title a:focus {
+  color: #007ba3;
 }
 .site-footer .copyright {
   color: #fff;
@@ -878,6 +945,100 @@ img {
   margin-left: -1em;
   margin-right: -1em;
 }
+article.post,
+article.page {
+  border-top: 1px solid #352300;
+  margin-top: 40px;
+  padding-top: 40px;
+  position: relative;
+}
+article.post:first-child,
+article.page:first-child {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.entry-header {
+  position: relative;
+}
+.entry-meta {
+  padding: 5px 0;
+}
+.entry-meta a {
+  color: #352300;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.entry-meta a:hover,
+.entry-meta a:focus {
+  color: #007ba3;
+}
+.entry-meta .tag-links::before {
+  content: "TAGGED: ";
+}
+.entry-meta .tag-links a {
+  text-transform: lowercase;
+}
+.entry-meta .tag-links a::after {
+  content: ", ";
+}
+.entry-meta .tag-links a:last-child::after {
+  content: "";
+}
+.entry-date,
+.comments-link {
+  display: block;
+}
+.entry-date {
+  float: left;
+}
+.byline {
+  display: none;
+}
+.comments-link {
+  float: right;
+}
+.post-navigation {
+  padding-bottom: 40px;
+}
+.post-navigation a {
+  color: #352300;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+}
+.post-navigation a:hover,
+.post-navigation a:focus {
+  color: #007ba3;
+}
+.post-edit-link {
+  color: #352300;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 12px;
+}
+.post-edit-link:hover,
+.post-edit-link:focus {
+  color: #007ba3;
+}
+.nav-links a {
+  display: block;
+  padding: 5px 0;
+  border-top: 1px solid #352300;
+}
+.nav-links a:last-child {
+  border-bottom: 1px solid #352300;
+}
+.meta-nav {
+  text-transform: uppercase;
+}
+.meta-nav::after {
+  content: " - ";
+}
 .comment-list,
 .children {
   padding: 20px 0 20px 50px;
@@ -895,6 +1056,11 @@ img {
   padding-bottom: 20px;
   border-bottom: 1px solid #352300;
   margin-bottom: 20px;
+}
+.comment:first-child,
+.children li:first-child {
+  border-top: 1px solid #352300;
+  padding-top: 20px;
 }
 .comment:last-child,
 .children li:last-child {
@@ -980,6 +1146,9 @@ img {
   text-decoration: none;
   text-shadow: 0px 0px 13px #000;
 }
+.form-allowed-tags code {
+  font-size: 12px;
+}
 .widget ol,
 .widget ul {
   padding: 0;
@@ -987,6 +1156,16 @@ img {
 .widget li {
   list-style-type: none;
   margin-bottom: .5em;
+}
+.widget a {
+  color: #352300;
+  text-decoration: none;
+  letter-spacing: 0.025em;
+  text-decoration: underline;
+}
+.widget a:hover,
+.widget a:focus {
+  color: #007ba3;
 }
 .widget-title {
   font-size: 20px;
